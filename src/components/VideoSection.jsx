@@ -3,7 +3,7 @@ export default function VideoSection() {
         <section
             className="py-12 px-4 text-center"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="600"
         >
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-6">
                 Video Tentang Produk Kami

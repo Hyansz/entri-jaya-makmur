@@ -3,7 +3,7 @@ export default function Welcome() {
         <div
             className="mx-auto text-center py-16 border-b-2 w-11/12 border-slate-200"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="600"
         >
             <h1 className="text-2xl md:text-3xl pb-5 font-semibold">
                 PT. ENTRI JAYA MAKMUR

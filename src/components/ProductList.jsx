@@ -40,7 +40,7 @@ export default function ProductList() {
             <h2
                 className="text-center text-4xl font-bold mb-8 text-red-600"
                 data-aos="zoom-in"
-                data-aos-duration="1000"
+                data-aos-duration="600"
             >
                 ALKOHOL ANTISEPTIK 96%
             </h2>
@@ -50,9 +50,9 @@ export default function ProductList() {
                 {products.map((product, index) => (
                     <div
                         key={index}
-                        data-aos="fade-up"
-                        data-aos-delay={index * 400}
-                        data-aos-duration="800"
+                        data-aos="zoom-in"
+                        data-aos-delay={index * 200}
+                        data-aos-duration="300"
                     >
                         <ProductCard {...product} />
                     </div>
@@ -63,7 +63,7 @@ export default function ProductList() {
             <div
                 className="mt-10 bg-orange-600 text-center py-6 sm:py-8 px-4 sm:px-6 rounded-xl shadow-md shadow-orange-800 space-y-3"
                 data-aos="zoom-in"
-                data-aos-duration="1000"
+                data-aos-duration="600"
             >
                 <h3 className="text-3xl sm:text-4xl font-extrabold text-white tracking-wide">
                     !! GRATIS ONGKIR !!

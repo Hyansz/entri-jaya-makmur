@@ -17,7 +17,7 @@ export default function MapSection() {
             className="bg-white py-12 px-4"
             id="kontak"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="600"
         >
             <div className="max-w-6xl mx-auto">
                 {/* Map */}

@@ -44,7 +44,7 @@ export default function Variants() {
             id="variant"
             className="bg-white text-center py-16 border-b-2 border-gray-200 w-11/12 mx-auto"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="600"
         >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 uppercase mb-12">
                 Varian Kemasan Alkohol Antiseptik 70%

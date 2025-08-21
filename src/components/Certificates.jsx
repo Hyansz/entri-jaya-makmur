@@ -20,7 +20,7 @@ export default function Certificates() {
         <section
             className="py-16 px-4 bg-white border-b-2 border-gray-200 w-11/12 mx-auto"
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="600"
         >
             <h2 className="text-center text-gray-800 font-bold mb-10 text-2xl uppercase tracking-wide">
                 Sertifikasi PT. Entri Jaya Makmur
