@@ -76,8 +76,11 @@ export default function Variants() {
                                 <p className="text-base text-gray-500 line-through">
                                     {variant.price}
                                 </p>
-                                <p className="text-xl text-red-600 font-bold mb-6">
+                                <p className="text-2xl text-red-600 font-bold">
                                     {variant.promo}
+                                </p>
+                                <p className="text-xs text-red-500 italic mb-6">
+                                    *Harga sudah termasuk PPN
                                 </p>
                             </div>
                         </SwiperSlide>
@@ -103,8 +106,11 @@ export default function Variants() {
                         <p className="text-sm text-gray-500 line-through mb-1">
                             {variant.price}
                         </p>
-                        <p className="text-base text-red-600 font-bold">
+                        <p className="text-xl text-red-600 font-bold">
                             {variant.promo}
+                        </p>
+                        <p className="text-[11px] text-red-500 italic">
+                            *Harga sudah termasuk PPN
                         </p>
                     </div>
                 ))}
@@ -113,7 +119,7 @@ export default function Variants() {
             {/* Tombol WhatsApp */}
             <div className="mb-10">
                 <a
-                    href="https://wa.me/6282324764733?text=Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya!"
+                    href="https://wa.me/6282324764733?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-green-700 transition-all duration-300"
@@ -143,7 +149,7 @@ export default function Variants() {
             {/* CTA Buttons */}
             <div className="flex items-center justify-center gap-4 flex-wrap">
                 <a
-                    href="https://wa.me/6282324764733?text=Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya!"
+                    href="https://wa.me/6282324764733?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-green-700 transition-all duration-300"

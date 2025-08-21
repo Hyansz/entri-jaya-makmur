@@ -8,9 +8,7 @@ export default function ProductCard({
     image,
 }) {
     return (
-        <div
-            className="bg-white rounded-xl shadow-lg p-4 max-w-sm mx-auto transition-transform duration-300 hover:scale-105 hover:-translate-y-1"
-        >
+        <div className="bg-white rounded-xl shadow-lg p-4 max-w-sm mx-auto transition-transform duration-300 hover:scale-105 hover:-translate-y-1">
             <div className="relative">
                 <img
                     src={image}
@@ -38,7 +36,7 @@ export default function ProductCard({
             </p>
 
             <p className="text-xs text-red-500 italic mt-0.5">
-                *Syarat & Ketentuan Berlaku
+                *Harga sudah termasuk PPN
             </p>
 
             <p className="text-sm text-justify text-gray-700 mt-2 mb-6">
@@ -48,7 +46,7 @@ export default function ProductCard({
             </p>
 
             <a
-                href="https://wa.me/6282324764733?text=Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya!"
+                href="https://wa.me/6282324764733?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition cursor-pointer"
