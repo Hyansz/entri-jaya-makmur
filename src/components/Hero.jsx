@@ -36,7 +36,7 @@ export default function Hero() {
                 </p>
             </div>
 
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-sm md:text-md">
                 <a
                     href="https://wa.me/6282324764733?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                     target="_blank"
