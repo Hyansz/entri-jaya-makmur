@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { FaWhatsapp, FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa";
-import { SiShopee } from "react-icons/si";
-import TokopediaLogo from "../assets/tokopedia.png";
+import { FaWhatsapp } from "react-icons/fa";
+import { event } from "../lib/gtag";
 
 export default function MapSection() {
     const [reload, setReload] = useState(0);
@@ -54,6 +53,13 @@ export default function MapSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-green-700 transition-all duration-300"
+                        onClick={() =>
+                            event({
+                                action: "click",
+                                category: "whatsapp",
+                                label: "klik_wa",
+                            })
+                        }
                     >
                         <FaWhatsapp className="text-xl" />
                         Hubungi Kami

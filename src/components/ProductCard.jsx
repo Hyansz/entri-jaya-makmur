@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { event } from "../lib/gtag";
 
 export default function ProductCard({
     title,
@@ -50,6 +51,13 @@ export default function ProductCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition cursor-pointer"
+                onClick={() =>
+                    event({
+                        action: "click",
+                        category: "whatsapp",
+                        label: "klik_wa",
+                    })
+                }
             >
                 <FaWhatsapp />
                 Hubungi Kami
