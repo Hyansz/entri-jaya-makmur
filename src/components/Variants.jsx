@@ -128,7 +128,7 @@ export default function Variants() {
                         event({
                             action: "click",
                             category: "whatsapp",
-                            label: "klik_wa",
+                            label: "klik_wa_variant",
                         })
                     }
                 >
@@ -165,7 +165,7 @@ export default function Variants() {
                         event({
                             action: "click",
                             category: "whatsapp",
-                            label: "klik_wa",
+                            label: "klik_wa_keyword",
                         })
                     }
                 >
@@ -178,6 +178,13 @@ export default function Variants() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-full text-md shadow-md"
+                    onClick={() =>
+                        event({
+                            action: "click",
+                            category: "website",
+                            label: "klik_web_entrijayamakmur",
+                        })
+                    }
                 >
                     <FaGlobe className="text-2xl" />
                     Kunjungi Website Resmi Kami

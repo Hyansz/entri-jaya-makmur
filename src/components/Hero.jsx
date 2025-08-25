@@ -47,7 +47,7 @@ export default function Hero() {
                         event({
                             action: "click",
                             category: "whatsapp",
-                            label: "klik_wa",
+                            label: "klik_wa_hero",
                         })
                     }
                 >

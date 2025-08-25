@@ -55,7 +55,7 @@ export default function ProductCard({
                     event({
                         action: "click",
                         category: "whatsapp",
-                        label: "klik_wa",
+                        label: "klik_wa_product",
                     })
                 }
             >
