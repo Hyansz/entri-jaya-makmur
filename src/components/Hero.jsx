@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import { event } from "../lib/gtag";
 
 export default function Hero() {
     const [show, setShow] = useState(false);
@@ -31,8 +32,8 @@ export default function Hero() {
                     }`}
                 >
                     MELAYANI PARTAI BESAR SKALA INDUSTRI DAN INDUSTRI UMKM, KAMI
-                    SIAP MELAYANI ANDA UNTUK PERMINTAAN ALKOHOL ANTISEPTIK 96% & 70%.
-                    SILAHKAN HUBUNGI TIM KAMI.
+                    SIAP MELAYANI ANDA UNTUK PERMINTAAN ALKOHOL ANTISEPTIK 96% &
+                    70%. SILAHKAN HUBUNGI TIM KAMI.
                 </p>
             </div>
 
@@ -42,6 +43,13 @@ export default function Hero() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-orange-700 transition-all duration-300"
+                    onClick={() =>
+                        event({
+                            action: "click",
+                            category: "whatsapp",
+                            label: "klik_wa",
+                        })
+                    }
                 >
                     <FaWhatsapp className="text-xl" />
                     Hubungi Kami
