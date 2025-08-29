@@ -9,31 +9,31 @@ import { event } from "../lib/gtag";
 export default function Variants() {
     const variants = [
         {
-            image: "./img/70_100_ML.jpg",
+            image: "./img/70_100_ML.webp",
             name: "Alkohol 70% 100 ml",
             price: "Rp 5.000",
             promo: "Rp 3.500",
         },
         {
-            image: "./img/70_1_L.jpg",
+            image: "./img/70_1_L.webp",
             name: "Alkohol 70% 1 L",
             price: "Rp 25.000",
             promo: "Rp 20.000",
         },
         {
-            image: "./img/70_5_L.jpg",
+            image: "./img/70_5_L.webp",
             name: "Alkohol 70% 5 L",
             price: "Rp 130.000",
             promo: "Rp 115.000",
         },
         {
-            image: "./img/70_20_L.jpg",
+            image: "./img/70_20_L.webp",
             name: "Alkohol 70% 20 L",
             price: "Rp 450.000",
             promo: "Rp 410.000",
         },
         {
-            image: "./img/70_200_L.jpg",
+            image: "./img/70_200_L.webp",
             name: "Alkohol 70% 200 L",
             price: "Rp 3.500.000",
             promo: "Rp 3.195.000",

@@ -1,4 +1,4 @@
-import TokopediaLogo from "../assets/tokopedia.png";
+import TokopediaLogo from "/img/tokopedia.webp";
 import { SiShopee } from "react-icons/si";
 import { FaTiktok } from "react-icons/fa";
 import { event } from "../lib/gtag";

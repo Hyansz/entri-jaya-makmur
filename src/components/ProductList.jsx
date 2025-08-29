@@ -7,28 +7,28 @@ export default function ProductList() {
             size: "1 L",
             price: "26.000",
             originalPrice: "32.000",
-            image: "./img/96_ 1_L.png",
+            image: "./img/96_ 1_L.webp",
         },
         {
             title: "Alkohol Antiseptik 96% Kemasan 5 Liter",
             size: "5 L",
             price: "130.000",
             originalPrice: "150.000",
-            image: "./img/96_ 5_L.png",
+            image: "./img/96_ 5_L.webp",
         },
         {
             title: "Alkohol Antiseptik 96% Kemasan 20 Liter",
             size: "20 L",
             price: "430.000",
             originalPrice: "450.000",
-            image: "./img/96_ 20_L.png",
+            image: "./img/96_ 20_L.webp",
         },
         {
             title: "Alkohol Antiseptik 96% Kemasan 200 Liter",
             size: "200 L",
             price: "4.000.000",
             originalPrice: "4.500.000",
-            image: "./img/96_ 200_L.png",
+            image: "./img/96_ 200_L.webp",
         },
     ];
 

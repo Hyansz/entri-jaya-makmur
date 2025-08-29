@@ -8,10 +8,10 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 export default function Certificates() {
     const images = [
-        { src: "/img/sertif1.png", title: "ISO 9001:2015" },
-        { src: "/img/sertif2.png", title: "Sertifikat Nasional" },
-        { src: "/img/sertif3.png", title: "Lisensi Industri" },
-        { src: "/img/sertif4.png", title: "Penghargaan Mutu" },
+        { src: "/img/sertif1.webp", title: "ISO 9001:2015" },
+        { src: "/img/sertif2.webp", title: "Sertifikat Nasional" },
+        { src: "/img/sertif3.webp", title: "Lisensi Industri" },
+        { src: "/img/sertif4.webp", title: "Penghargaan Mutu" },
     ];
 
     const [index, setIndex] = useState(-1);

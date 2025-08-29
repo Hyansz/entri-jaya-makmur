@@ -8,7 +8,7 @@ export default function Footer() {
                 {/* Logo dan nama */}
                 <div className="flex-shrink-0 flex items-center gap-2">
                     <img
-                        src="./img/logo1.png"
+                        src="./img/logo1.webp"
                         alt="Logo"
                         className="h-12 object-contain"
                     />

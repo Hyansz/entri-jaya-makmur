@@ -13,7 +13,7 @@ export default function Hero() {
     return (
         <section
             className="relative h-[100vh] bg-cover bg-center text-white"
-            style={{ backgroundImage: `url('/img/bsm1.jpg')` }}
+            style={{ backgroundImage: `url('/img/bsm1.webp')` }}
             id="home"
         >
             <div className="absolute inset-0 bg-black/60 z-0"></div>

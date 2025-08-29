@@ -36,7 +36,7 @@ export default function Header() {
             <div className="flex justify-center items-center">
                 <button onClick={scrollToTop} className="cursor-pointer">
                     <img
-                        src="./img/logo2.png"
+                        src="./img/logo2.webp"
                         alt="logo"
                         className="h-10 w-auto object-contain hover:scale-110 transition-transform duration-300 drop-shadow-lg"
                     />
