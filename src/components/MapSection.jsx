@@ -49,7 +49,7 @@ export default function MapSection() {
                 {/* WhatsApp Button */}
                 <div className="text-center mb-4">
                     <a
-                        href="https://wa.me/6282324764733?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                        href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-green-700 transition-all duration-300"
