@@ -24,7 +24,6 @@ export default function App() {
             <VideoSection />
             <MapSection />
             <Footer />
-            {/* <Fan /> */}
         </div>
     );
 }
