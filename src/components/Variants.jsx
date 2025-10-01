@@ -109,7 +109,7 @@ export default function Variants() {
                                         }
                                     >
                                         <FaWhatsapp />
-                                        Hubungi Kami
+                                        Pesan Sekarang
                                     </a>
                                 </div>
                             </div>
@@ -169,7 +169,7 @@ export default function Variants() {
                                 }
                             >
                                 <FaWhatsapp />
-                                Hubungi Kami
+                                Pesan Sekarang
                             </a>
                         </div>
                     </div>
@@ -192,7 +192,7 @@ export default function Variants() {
                     }
                 >
                     <FaWhatsapp className="text-xl" />
-                    Hubungi Kami
+                    Pesan Sekarang
                 </a>
                 <h1 className="text-xl py-3 md:py-2 font-semibold md:px-3">
                     0851-7439-4123
@@ -233,7 +233,7 @@ export default function Variants() {
                         }
                     >
                         <FaWhatsapp className="text-xl" />
-                        Hubungi Kami
+                        Pesan Sekarang
                     </a> */}
                     <div className="flex items-center justify-center flex-col rounded-xl border-[2px] border-green-600 w-fit md:flex-row md:rounded-xl hover:border-green-700 transition">
                         <a
@@ -250,7 +250,7 @@ export default function Variants() {
                             }
                         >
                             <FaWhatsapp className="text-xl" />
-                            Hubungi Kami
+                            Pesan Sekarang
                         </a>
                         <h1 className="text-xl py-3 md:py-2 font-semibold md:px-3">
                             0851-7439-4123

@@ -69,7 +69,7 @@ export default function ProductCard({
                 }
             >
                 <FaWhatsapp />
-                Hubungi Kami
+                Pesan Sekarang
             </a>
         </div>
     );

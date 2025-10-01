@@ -52,7 +52,7 @@ export default function Hero() {
                     }
                 >
                     <FaWhatsapp className="text-xl" />
-                    Hubungi Kami
+                    Pesan Sekarang
                 </a>
             </div>
         </section>

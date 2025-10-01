@@ -62,7 +62,7 @@ export default function MapSection() {
                         }
                     >
                         <FaWhatsapp className="text-xl" />
-                        Hubungi Kami
+                        Pesan Sekarang
                     </a>
                     <h1 className="text-xl py-3 md:py-2 font-semibold md:px-3">
                         0851-7439-4123
