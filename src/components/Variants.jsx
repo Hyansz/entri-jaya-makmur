@@ -46,7 +46,7 @@ export default function Variants() {
             data-aos="zoom-in"
             data-aos-duration="600"
         >
-            <h2 className="text-2xl md:text-[40px] font-bold text-gray-800 uppercase mb-10">
+            <h2 className="text-2xl md:text-[40px] font-bold text-gray-800 w-11/12 mx-auto uppercase mb-10">
                 Varian Kemasan Alkohol Antiseptik 70%
             </h2>
 

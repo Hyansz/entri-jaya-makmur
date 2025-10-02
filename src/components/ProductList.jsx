@@ -41,7 +41,7 @@ export default function ProductList() {
             className="mx-auto py-16 w-11/12 border-b-2 border-slate-200"
             id="produk"
         >
-            <div className="mb-8" data-aos="zoom-in" data-aos-duration="600">
+            <div className="mb-8" data-aos="zoom-in" data-aos-duration="400">
                 <h2 className="text-center text-[42px] font-bold mb-4 text-red-600">
                     ALKOHOL ANTISEPTIK 96%
                 </h2>
@@ -59,7 +59,7 @@ export default function ProductList() {
                     <div
                         key={index}
                         data-aos="zoom-in"
-                        data-aos-delay={index * 200}
+                        data-aos-delay={index * 50}
                         data-aos-duration="300"
                     >
                         <ProductCard {...product} />

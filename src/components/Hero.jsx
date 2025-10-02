@@ -55,6 +55,7 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
+            
             <div className="block md:hidden relative h-[100vh] bg-cover bg-center text-white" style={{ backgroundImage: `url('/img/bsm2.jpg')` }}>
                 <div className="absolute inset-0 bg-black/60 z-0"></div>
 
@@ -77,12 +78,12 @@ export default function Hero() {
                     </p>
                 </div>
 
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-sm md:text-md">
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-sm md:text-md bg-orange-600 hover:bg-orange-700 transition-all duration-300 rounded-full shadow-lg hover:scale-105 py-3 w-[60%]">
                     <a
                         href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-orange-700 transition-all duration-300"
+                        className="flex items-center justify-center gap-2 w-full text-white font-semibold"
                         onClick={() =>
                             event({
                                 action: "click",
