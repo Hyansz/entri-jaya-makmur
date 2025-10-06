@@ -1,22 +1,28 @@
 import { FaWhatsapp } from "react-icons/fa";
-import { event } from "../lib/gtag";
 import { MdStarRate } from "react-icons/md";
+import { memo, useCallback } from "react";
+import { event } from "../lib/gtag";
 
-export default function ProductCard({
-    title,
-    size,
-    price,
-    originalPrice,
-    image,
-    sold,
-}) {
+function ProductCard({ title, size, price, originalPrice, image, sold }) {
+    const handleClick = useCallback(() => {
+        event({
+            action: "click",
+            category: "whatsapp",
+            label: "klik_wa_product",
+        });
+    }, []);
+
     return (
         <div className="bg-white rounded-xl shadow-lg p-4 max-w-sm mx-auto transition-transform duration-300 hover:scale-105 hover:-translate-y-1">
             <div className="relative">
                 <img
                     src={image}
                     alt={title}
+                    loading="lazy"
+                    decoding="async"
                     className="mx-auto object-contain mb-4 rounded-xl"
+                    width="400"
+                    height="400"
                 />
                 <span className="absolute bottom-0 right-0 bg-cyan-500 text-white text-xs font-bold px-2 py-0.5 rounded-tl-lg">
                     {size}
@@ -25,15 +31,13 @@ export default function ProductCard({
 
             <div className="flex items-center justify-between">
                 <div className="font-bold flex text-xl text-yellow-400 mb-3 leading-tight">
-                    <MdStarRate />
-                    <MdStarRate />
-                    <MdStarRate />
-                    <MdStarRate />
-                    <MdStarRate />
+                    {Array(5)
+                        .fill(0)
+                        .map((_, i) => (
+                            <MdStarRate key={i} />
+                        ))}
                 </div>
-                <div className="flex text-md font-medium mb-3">
-                    <p>{sold} Terjual</p>
-                </div>
+                <p className="text-md font-medium mb-3">{sold} Terjual</p>
             </div>
 
             <p className="font-semibold text-[20px] mb-2 leading-tight">
@@ -46,11 +50,9 @@ export default function ProductCard({
                 </p>
             )}
 
-            {/* Harga setelah diskon */}
             <p className="text-red-600 font-bold text-2xl mb-1.5 leading-none">
                 Rp {price}
             </p>
-
             <p className="text-xs text-red-500 italic mt-0.5 mb-6">
                 *Harga sudah termasuk PPN
             </p>
@@ -59,14 +61,8 @@ export default function ProductCard({
                 href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleClick}
                 className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition cursor-pointer"
-                onClick={() =>
-                    event({
-                        action: "click",
-                        category: "whatsapp",
-                        label: "klik_wa_product",
-                    })
-                }
             >
                 <FaWhatsapp />
                 Pesan Sekarang
@@ -74,3 +70,5 @@ export default function ProductCard({
         </div>
     );
 }
+
+export default memo(ProductCard);

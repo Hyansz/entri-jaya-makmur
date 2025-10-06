@@ -1,23 +1,45 @@
-import { useEffect, useState } from "react";
+// Hero.jsx (Optimized)
+import { useEffect, useState, memo } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { event } from "../lib/gtag";
 
-export default function Hero() {
+function Hero() {
     const [show, setShow] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setShow(true), 100);
-        return () => clearTimeout(timeout);
+        // Hindari layout shift awal (pakai RAF + delay ringan)
+        const raf = requestAnimationFrame(() => {
+            setTimeout(() => setShow(true), 150);
+        });
+        return () => cancelAnimationFrame(raf);
+    }, []);
+
+    const handleClick = () => {
+        event({
+            action: "click",
+            category: "whatsapp",
+            label: "klik_wa_hero",
+        });
+    };
+
+    // Preload image (agar tidak memicu reflow saat gambar muncul)
+    useEffect(() => {
+        const desktop = new Image();
+        desktop.src = "/img/bsm1.webp";
+        const mobile = new Image();
+        mobile.src = "/img/bsm2.webp";
     }, []);
 
     return (
-        <section
-            id="home"
-        >
-            <div className="hidden md:block relative h-[100vh] bg-cover bg-center text-white" style={{ backgroundImage: `url('/img/bsm1.jpg')` }}>
+        <section id="home">
+            {/* Desktop */}
+            <div
+                className="hidden md:block relative h-screen bg-cover bg-center text-white will-change-transform"
+                style={{ backgroundImage: "url('/img/bsm1.jpg')" }}
+            >
                 <div className="absolute inset-0 bg-black/60 z-0"></div>
 
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 w-full">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
                     <h1
                         className={`text-3xl md:text-5xl font-bold mb-4 text-yellow-400 drop-shadow-md transition-opacity duration-1000 ${
                             show ? "opacity-100" : "opacity-0"
@@ -26,7 +48,7 @@ export default function Hero() {
                         ALKOHOL ANTISEPTIK 96% & 70%
                     </h1>
                     <p
-                        className={`text-lg md:text-xl font-medium w-11/12 md:w-2/3 mx-auto drop-shadow transition-opacity duration-1000 delay-300 ${
+                        className={`text-lg md:text-xl font-medium max-w-3xl mx-auto drop-shadow transition-opacity duration-1000 delay-300 ${
                             show ? "opacity-100" : "opacity-0"
                         }`}
                     >
@@ -36,39 +58,37 @@ export default function Hero() {
                     </p>
                 </div>
 
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-sm md:text-md">
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
                     <a
                         href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-orange-700 transition-all duration-300"
-                        onClick={() =>
-                            event({
-                                action: "click",
-                                category: "whatsapp",
-                                label: "klik_wa_hero",
-                            })
-                        }
+                        onClick={handleClick}
+                        className="inline-flex items-center gap-2 bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 hover:bg-orange-700 transition-transform duration-300"
                     >
                         <FaWhatsapp className="text-xl" />
                         Pesan Sekarang
                     </a>
                 </div>
             </div>
-            
-            <div className="block md:hidden relative h-[100vh] bg-cover bg-center text-white" style={{ backgroundImage: `url('/img/bsm2.jpg')` }}>
+
+            {/* Mobile */}
+            <div
+                className="block md:hidden relative h-screen bg-cover bg-center text-white will-change-transform"
+                style={{ backgroundImage: "url('/img/bsm2.jpg')" }}
+            >
                 <div className="absolute inset-0 bg-black/60 z-0"></div>
 
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-center px-4 w-full">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
                     <h1
-                        className={`text-3xl md:text-5xl font-bold mb-4 text-yellow-400 drop-shadow-md transition-opacity duration-1000 ${
+                        className={`text-3xl font-bold mb-4 text-yellow-400 drop-shadow-md transition-opacity duration-1000 ${
                             show ? "opacity-100" : "opacity-0"
                         }`}
                     >
                         ALKOHOL ANTISEPTIK 96% & 70%
                     </h1>
                     <p
-                        className={`text-lg md:text-xl font-medium w-11/12 md:w-2/3 mx-auto drop-shadow transition-opacity duration-1000 delay-300 ${
+                        className={`text-lg font-medium max-w-lg mx-auto drop-shadow transition-opacity duration-1000 delay-300 ${
                             show ? "opacity-100" : "opacity-0"
                         }`}
                     >
@@ -78,19 +98,13 @@ export default function Hero() {
                     </p>
                 </div>
 
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-sm md:text-md bg-orange-600 hover:bg-orange-700 transition-all duration-300 rounded-full shadow-lg hover:scale-105 py-3 w-[60%]">
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 w-[60%]">
                     <a
                         href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 w-full text-white font-semibold"
-                        onClick={() =>
-                            event({
-                                action: "click",
-                                category: "whatsapp",
-                                label: "klik_wa_hero",
-                            })
-                        }
+                        onClick={handleClick}
+                        className="flex items-center justify-center gap-2 bg-orange-600 text-white font-semibold py-3 rounded-full shadow-lg hover:scale-105 hover:bg-orange-700 transition-transform duration-300"
                     >
                         <FaWhatsapp className="text-xl" />
                         Pesan Sekarang
@@ -100,3 +114,5 @@ export default function Hero() {
         </section>
     );
 }
+
+export default memo(Hero);
