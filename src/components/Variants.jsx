@@ -227,7 +227,7 @@ function Variants() {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={handleClickVariantWA}
-                            className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 shadow-lg rounded-t-lg md:rounded-l-lg hover:bg-green-700 transition-all duration-300"
+                            className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 shadow-lg rounded-t-lg md:rounded-l-lg md:rounded-t-none hover:bg-green-700 transition-all duration-300"
                         >
                             <FaWhatsapp className="text-xl" />
                             Pesan Sekarang
