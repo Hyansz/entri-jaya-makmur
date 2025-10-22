@@ -25,9 +25,9 @@ function Hero() {
     // Preload image (agar tidak memicu reflow saat gambar muncul)
     useEffect(() => {
         const desktop = new Image();
-        desktop.src = "/img/bsm1.webp";
+        desktop.src = "/img/bsm1.jpg";
         const mobile = new Image();
-        mobile.src = "/img/bsm2.webp";
+        mobile.src = "/img/bsm2.jpg";
     }, []);
 
     return (
