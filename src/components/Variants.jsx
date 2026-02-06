@@ -134,7 +134,7 @@ function Variants() {
                                         *Harga sudah termasuk PPN
                                     </p>
                                     <a
-                                        href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                                        href="https://wa.me/6285174394123?text=Halo!%20Bisa%20minta%20info%20lebih%20lanjut%20tentang%20produk%20Alkohol?"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         onClick={handleClickWA}
@@ -192,7 +192,7 @@ function Variants() {
                                 *Harga sudah termasuk PPN
                             </p>
                             <a
-                                href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                                href="https://wa.me/6285174394123?text=Halo!%20Bisa%20minta%20info%20lebih%20lanjut%20tentang%20produk%20Alkohol?"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={handleClickWA}
@@ -223,7 +223,7 @@ function Variants() {
                 <div className="flex items-center justify-center gap-4 flex-wrap">
                     <div className="flex items-center justify-center flex-col rounded-xl border-[2px] border-green-600 w-fit md:flex-row hover:border-green-700 transition">
                         <a
-                            href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                            href="https://wa.me/6285174394123?text=Halo!%20Bisa%20minta%20info%20lebih%20lanjut%20tentang%20produk%20Alkohol?"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={handleClickVariantWA}

@@ -58,7 +58,7 @@ function ProductCard({ title, size, price, originalPrice, image, sold }) {
             </p>
 
             <a
-                href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                href="https://wa.me/6285174394123?text=Halo!%20Bisa%20minta%20info%20lebih%20lanjut%20tentang%20produk%20Alkohol?"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleClick}

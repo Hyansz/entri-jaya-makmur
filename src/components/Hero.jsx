@@ -52,15 +52,13 @@ function Hero() {
                             show ? "opacity-100" : "opacity-0"
                         }`}
                     >
-                        MELAYANI PARTAI BESAR SKALA INDUSTRI DAN INDUSTRI UMKM,
-                        KAMI SIAP MELAYANI ANDA UNTUK PERMINTAAN ALKOHOL
-                        ANTISEPTIK 96% & 70%. SILAHKAN HUBUNGI TIM KAMI.
+                        Alkohol berbahan Etanol tersedia jenis Alkohol Etanol Isoprophyl dan Alkohol Bit 6. Cocok untuk Industri, Medis, Parfum dan Kosmetik
                     </p>
                 </div>
 
                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
                     <a
-                        href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                        href="https://wa.me/6285174394123?text=Halo!%20Bisa%20minta%20info%20lebih%20lanjut%20tentang%20produk%20Alkohol?"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={handleClick}
@@ -100,7 +98,7 @@ function Hero() {
 
                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 w-[60%]">
                     <a
-                        href="https://wa.me/6285174394123?text=✦%20Halo%20kak,%20mau%20tanya%20produk%20alkohol%20antiseptiknya?"
+                        href="https://wa.me/6285174394123?text=Halo!%20Bisa%20minta%20info%20lebih%20lanjut%20tentang%20produk%20Alkohol?"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={handleClick}
